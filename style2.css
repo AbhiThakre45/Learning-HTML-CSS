@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+}
+.head1{
+    color: blue;
+    font-size: 90px;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: black;
+}
+.para{
+    font-family: Verdana;
+    font-size: 30px;
+    /*word-spacing: 40px;
+    letter-spacing: 10px;*/
+    line-height: 80px;
+    font-weight: bold;
+    /*color: tomato;*/
+    text-shadow: -8px -2px 5px white ;
+}
