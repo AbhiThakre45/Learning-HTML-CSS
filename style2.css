@@ -3,11 +3,12 @@ body{
 }
 .head1{
     color: blue;
-    font-size: 90px;
+    /*font-size: 90px;*/
     font-style: italic;
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: black;
+    text-align: center;
 }
 .para{
     font-family: Verdana;
