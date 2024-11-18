@@ -1,0 +1,13 @@
+.square{
+    background-color: antiquewhite;
+    
+    padding: 100px;
+    border: 5px solid burlywood;
+    border-radius: 10px;
+
+    height: 300px;
+    width: 200px;
+    
+   
+    
+}

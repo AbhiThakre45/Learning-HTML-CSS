@@ -1,0 +1,87 @@
+body {
+    background-color: #0c0b0b;
+    color: #ffd700;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0.5em;
+    text-shadow: 2px 2px 10px #ffa500, 0 0 20px #ff4500, 0 0 30px #ff6347;
+    animation: flicker 2s infinite;
+    z-index: 2;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1em;
+    z-index: 2;
+  }
+  
+  /* Firewall effect */
+  .firewall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: radial-gradient(circle at 50% 100%, #ff4500, transparent 70%);
+    opacity: 0.7;
+    z-index: 0;
+    animation: fire-flicker 3s infinite;
+  }
+  
+  @keyframes fire-flicker {
+    0%, 100% { background-position: 0 0; }
+    50% { background-position: 10px -10px; }
+  }
+  
+  /* Create a glowing diya */
+  .diya {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background: #964b00;
+    border-radius: 0 0 50px 50px;
+    margin-top: 2em;
+    animation: glow 2s infinite alternate;
+    z-index: 2;
+  }
+  
+  .diya::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 30px;
+    background: #ffa500;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px #ff8c00, 0 0 25px 10px #ffd700;
+  }
+  
+  /* Flicker and glow animations */
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+    75% { opacity: 0.6; }
+  }
+  
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 15px 5px #ff8c00, 0 0 25px 10px #ffd700; }
+    50% { box-shadow: 0 0 20px 10px #ff4500, 0 0 30px 15px #ffd700; }
+  }
+  
