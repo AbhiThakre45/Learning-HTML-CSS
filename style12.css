@@ -1,0 +1,27 @@
+#head1::first-letter{
+    font-size: 90px;
+    color: blue;
+}
+
+#head1::selection{
+    background-color: yellow;
+}
+
+.parag::placeholder{
+    font-weight: bold;
+}
+
+input::placeholder{
+    color: red;
+}
+
+h2::before{
+    content: "Intelligence";
+    color: green;
+}
+
+h2::after{
+    content: "Machine Learning";
+    color: brown;
+}
+
